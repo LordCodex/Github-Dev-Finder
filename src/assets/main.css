@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --bgc-color: #f6f8ff;
+  --card-color: #fefefe;
+  --bio-color: #697c9a;
+  --icon-color: #4b6a9b;
+  --stats-color: #bbb;
+  --logo-color: #000;
+  --btn-color: #0079ff;
+  --theme-filter: invert(0%) sepia(100%) saturate(15%) hue-rotate(237deg) brightness(99%) contrast(104%);
+}
+
+
+
+::-moz-placeholder {
+  color: var(--stats-color);
+}
+
+::placeholder {
+  color: var(--stats-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgc-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.fl-col {
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  width: 55%;
+  padding: 20px;
+}
+
+.card-title {
+  width: 100%;
+  justify-content: space-between;
+}
+.card-title .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--logo-color);
+}
+.card-title .theme {
+  gap: 10px;
+  font-size: 1.7rem;
+  color: var(--bio-color);
+  cursor: pointer;
+}
+.card-title .theme i {
+  transform: rotate(-20deg);
+}
+
+.input-feild {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  box-shadow: 0 10px 37px -18px #000;
+  border-radius: 12px;
+  background-color: var(--card-color);
+}
+.input-feild input {
+  width: 89%;
+  height: 100%;
+  padding-inline: 15px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: #999;
+}
+.input-feild button {
+  width: 11%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 0px 12px 12px 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.input-feild i {
+  font-size: 1.5rem;
+  color: var(--btn-color);
+}
+
+.card-content {
+  margin-top: 30px;
+  padding: 20px;
+  width: 100%;
+  color: var(--bio-color);
+  background-color: var(--card-color);
+  box-shadow: 0 10px 37px -18px #000;
+  border-radius: 8px;
+}
+
+.profile {
+  width: 100%;
+  gap: 15px;
+}
+
+.profile-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.profile-detail h1 {
+  font-size: 2.2rem;
+}
+.profile-detail span {
+  font-size: 1.4rem;
+  color: var(--btn-color);
+}
+.profile-detail p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.bio {
+  width: 100%;
+  padding: 20px 5px;
+}
+.bio span {
+  font-size: 1.5rem;
+}
+
+.repositry {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  justify-content: space-around;
+  background-color: var(--bgc-color);
+}
+.repositry div {
+  text-align: center;
+  gap: 5px;
+}
+.repositry div h3 {
+  font-size: 1.4rem;
+}
+.repositry div span {
+  font-size: 1.4rem;
+}
+
+.personal-info {
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 8px;
+}
+.personal-info div span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.personal-info div i {
+  font-size: 1.5rem;
+  color: var(--icon-color) !important;
+}
+
+@media (max-width: 1060px) {
+  .card {
+    width: 70%;
+  }
+}
+@media (max-width: 730px) {
+  .card {
+    width: 85%;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 58%;
+  }
+  .card {
+    width: 98%;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile .profile-img img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
