@@ -123,7 +123,7 @@ const goToAnotherWebsite = () => {
                 </p>
               </div>
               <div class="view-more-button">
-                <a :href="repo.url" class="button">View More</a>
+                <a :href="repo.html_url" class="button">View More</a>
               </div>
             </div>
 
